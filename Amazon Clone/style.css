@@ -1,0 +1,342 @@
+:root{
+    /* Primary Color */
+   --primary-black: #000;
+   --primary-white: #ffff;
+   --primary-orange: #f19d38;
+   --secondary-darkblack: #141920;
+   /* Secondary Color */
+   --secondary-medium: #252f3d;
+   --secondary-blue: #007185;
+   --secondary-red: #b12704;
+   --secondary-yellow: #f4bf76;
+   --secondary-darkyellow: #f2a742;
+   --secondary-orange: #c45500;
+   --secondary-hoverorange: #b65b22;
+   /* Grey Color */
+   --gray-: #dddd;
+   --gray-100: #c9cccc;
+   --gray-500: #565959;
+   /* Fonts */
+   --font-bigger: 24px;
+   --font-big:  22px;
+   --font-medium: 18px;
+   --font-small: 14px;
+   --font-parabig: 18px;
+   --font-paramedium: 14px;
+   --font-parasmall: 12px;
+}
+@import url('https://fonts.cdnfonts.com/css/amazon-ember');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Amazon Ember', sans-serif;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 99px;
+}
+/* Upper header */
+header .primary-nav{
+    width: 100%;
+    height: 60px;    
+    background-color: var(--primary-black);
+}
+header .primary-nav .nav-belt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--primary-white);
+}
+.nav-belt .nav-left{
+    display: flex;
+}
+/* Logo */
+.nav-belt .nav-left .nav-logo img{
+    width: 113px;
+    margin: 5px;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.nav-belt .nav-left .nav-logo img:hover{
+    outline: 1px solid white;
+}
+/* Location div */
+.nav-belt .nav-left .nav-loc-global{
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+.nav-belt .nav-left .nav-loc-global ion-icon{
+    font-size: 22px;
+    margin-top: 15px;
+}
+.nav-belt .nav-left .nav-loc-global .nav-loc-content{
+    margin-top: 5px;
+}
+.nav-belt .nav-left .nav-loc-global .nav-loc-content p{
+    font-size: var(--font-paramedium);
+}
+.nav-belt .nav-left .nav-loc-global .nav-loc-content h6{
+    font-size: var(--font-parabig);
+}
+.nav-belt .nav-left .nav-loc-global:hover{
+    outline: 1px solid #fff;
+}
+/* search bar */
+.primary-nav .nav-belt .nav-fill{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    margin-left: 25px;
+}
+.nav-belt .nav-fill:hover{
+    outline: 2px solid var(--secondary-darkyellow);
+}
+.nav-fill .cate-list{
+    width: 50px;    
+    height: 40px;
+    overflow: hidden;
+    border: none;
+    outline: none;
+}
+.nav-fill .cate-list select{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: var(--gray-100);
+}
+.cate-list select option{
+    background-color: var(--primary-white);
+    font-size: var(--font-parabig);
+    color: black;
+}
+/* Input Search Bar */
+.nav-fill .search-bar input{
+    width: 56.8vw;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: var(--font-paramedium);
+    color: var(--secondary-darkblack);
+}
+.nav-fill .search-bar input::placeholder{
+    font-size: var(--font-paramedium);
+    color: var(--gray-500);
+}
+/* Search button */
+.search-div{
+    width: 50px;
+    height: 40px;
+}
+.search-div .search-button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--primary-orange);
+}
+.search-div .search-button span ion-icon{
+    font-size: 20px;
+}
+/* Nav Right */
+/* Language */
+.nav-right .lang-flag{
+    display: flex;
+    margin-left: 10px;
+    padding: 15px 0 5px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.nav-right .lang-flag .flag img{
+    width: 25px;
+    height: 25px;
+}
+.nav-right .lang-flag .lang select{
+    background: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: var(--font-paramedium);
+}
+.nav-right .lang-flag .lang select option{
+    color: black;
+    font-size: var(--font-paramedium);
+}
+.nav-right .lang-flag:hover{
+    outline: 1px solid white;
+}
+/* Sigin and login div */
+.login-div{
+    display: flex;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 1px;
+}
+.login-div .login-content p{
+    font-size: var(--font-paramedium);
+    font: 500;
+}
+.login-div .login-content h5{
+    font-size: var(--font-parabig);
+}
+.login-div .arrow select{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    margin-top: 18px;
+    margin-right: 10px;
+}
+.login-div:hover{
+    outline: 1px solid white;
+}
+/* Return & Orders */
+.return-login-div{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}
+.return-login-div p{
+    font-size: var(--font-paramedium);
+}
+.return-login-div h5{
+    font-size: var(--font-parabig);
+}
+.return-login-div:hover{
+    outline: 1px solid white;
+}
+/* Add to Cart */
+.cart-div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.cart-div .cart-icon ion-icon{
+    font-size: 40px;
+}
+.cart-div .cart-content{
+    margin-top: 15px;
+    font-size: var(--font-parabig);
+}
+.cart-div:hover{
+    outline: 1px solid white;
+}
+/* Secondary Navbar  */
+.secondary-nav{
+    width: 100vw;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-medium);
+}
+/* Navigation links */
+.secondary-nav .panel{
+    color: var(--primary-white);
+    display: flex;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.secondary-nav .panel ion-icon{
+    font-size: 30px;
+}
+.secondary-nav .panel h5{
+    font-size: var(--font-parabig);
+    margin-top: 5px;
+}
+.secondary-nav .panel:hover{
+    outline: 1px solid white;
+}
+.secondary-nav .nav-list ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: 20px;
+}
+.secondary-nav .nav-list a{
+    text-decoration: none;
+    color: var(--primary-white);
+    padding: 5px;
+}
+.secondary-nav .nav-list li{
+    padding: 8px;
+    border-radius: 2px;
+    font-size: var(--font-paramedium);
+    font-weight: 600;
+}
+.secondary-nav .nav-list li:hover{
+    outline: 1px solid white;
+}
+/* Navigation styling Ended here */
+/* Main content styling starts here */
+main{
+    background-color: var(--gray-);
+}
+main .container{
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main .container img{
+    width: 80vw;
+}
+main .container .container-contents{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80vw;
+    background: transparent;
+    margin-top: -15%;
+}
+.container-contents div{
+    width: 24%;
+    height: 55%;
+    background-color: var(--primary-white);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.container-contents div h4{
+    margin: 15px;
+    font-size: var(--font-bigger);
+}
+.container-contents div img{
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+}
+.container-contents div a{
+    margin: 15px ;
+    color: var(--secondary-blue);
+    text-decoration: none;
+}
+.container-contents div:hover a{
+    color: var(--secondary-hoverorange);
+}
+.container-contents div a:hover{
+    color: var(--secondary-hoverorange);
+    text-decoration: underline;
+}
