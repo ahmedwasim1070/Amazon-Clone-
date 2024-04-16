@@ -1,3 +1,3 @@
-# Amazon-Deep-Web-Clone-
+# Amazon-Clone-
 Amazon Cloned Just do not judge for Categories. 😙💀
 Not Responsive Tho.
