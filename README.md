@@ -1,3 +1,3 @@
 # Amazon-Clone-
-Amazon Cloned Just do not judge for Categories. 😙💀
+Amazon Clone. 😙💀
 Not Responsive Tho.
