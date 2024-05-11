@@ -1,3 +1,3 @@
 # Amazon-Clone-
-Amazon Clone. 😙💀
-Not Responsive Tho.
+Amazon Clone. 
+Note: Not Responsive
